@@ -30,7 +30,7 @@ const AdminPanel = () => {
 
         // Fetch users from the backend
         const userResponse = await axios.get(
-          "http://127.0.0.1:5000/admin/get-users?page=1&per_page=100",
+          "https://gcu-campus-guide-backend.onrender.com/admin/get-users?page=1&per_page=100",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -47,7 +47,7 @@ const AdminPanel = () => {
 
         // Fetch messages
         const enquiryResponse = await axios.get(
-          "http://127.0.0.1:5000/admin/get-messages?message_type=enquiry&page=1&per_page=100",
+          "https://gcu-campus-guide-backend.onrender.com/admin/get-messages?message_type=enquiry&page=1&per_page=100",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -56,7 +56,7 @@ const AdminPanel = () => {
         );
 
         const feedbackResponse = await axios.get(
-          "http://127.0.0.1:5000/admin/get-messages?message_type=feedback&page=1&per_page=100",
+          "https://gcu-campus-guide-backend.onrender.com/admin/get-messages?message_type=feedback&page=1&per_page=100",
           {
             headers: {
               Authorization: `Bearer ${token}`,

@@ -32,7 +32,7 @@ const ContactUs = () => {
 
       // Send the POST request to the backend
       const response = await axios.post(
-        "http://127.0.0.1:5000/send-message", // Replace with your backend endpoint
+        "https://gcu-campus-guide-backend.onrender.com/send-message", // Replace with your backend endpoint
         {
           message, // The message content
           message_type: messageType, // The message type (enquiry/feedback)

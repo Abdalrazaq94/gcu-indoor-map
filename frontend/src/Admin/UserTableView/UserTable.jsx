@@ -25,7 +25,7 @@ const UserTable = () => {
 
         // Fetch paginated users
         const response = await axios.get(
-          `http://127.0.0.1:5000/admin/get-users?page=${page}&per_page=13`,
+          `https://gcu-campus-guide-backend.onrender.com/admin/get-users?page=${page}&per_page=13`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -55,7 +55,7 @@ const UserTable = () => {
       }
 
       await axios.post(
-        "http://127.0.0.1:5000/admin/change-admin-status",
+        "https://gcu-campus-guide-backend.onrender.com/admin/change-admin-status",
         {
           user_id: userId,
           new_is_admin: newStatus,
@@ -89,7 +89,7 @@ const UserTable = () => {
 
     try {
       await axios.post(
-        "http://127.0.0.1:5000/admin/edit-user",
+        "https://gcu-campus-guide-backend.onrender.com/admin/edit-user",
         {
           user_id: selectedUser.id,
           username: selectedUser.username,

@@ -24,7 +24,7 @@ const Feedback= () => {
 
         // Fetch feedback messages
         const response = await axios.get(
-          `http://127.0.0.1:5000/admin/get-messages?page=${page}&per_page=10&message_type=feedback`,
+          `https://gcu-campus-guide-backend.onrender.com/admin/get-messages?page=${page}&per_page=10&message_type=feedback`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -55,7 +55,7 @@ const Feedback= () => {
 
       // Toggle read status
       await axios.post(
-        "http://127.0.0.1:5000/admin/set-message-read",
+        "https://gcu-campus-guide-backend.onrender.com/admin/set-message-read",
         { message_id: messageId },
         {
           headers: {

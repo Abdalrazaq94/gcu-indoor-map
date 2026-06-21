@@ -23,7 +23,7 @@ const AdminUserTable = () => {
 
         // Fetch paginated admin users
         const response = await axios.get(
-          `http://127.0.0.1:5000/admin/get-users?page=${page}&per_page=13`,
+          `https://gcu-campus-guide-backend.onrender.com/admin/get-users?page=${page}&per_page=13`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
