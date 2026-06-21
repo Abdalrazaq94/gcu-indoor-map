@@ -27,7 +27,7 @@ const ResetPassword = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/auth/reset-password", {
+      const response = await fetch("https://gcu-campus-guide-backend.onrender.com/auth/reset-password", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
