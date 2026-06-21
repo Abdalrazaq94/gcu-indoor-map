@@ -46,9 +46,9 @@ const ContactusSection = () => {
                                     </Link>
                                 </div>
                                 <div className="flex justify-start">
-                                    <Link to="/right-link">
+                                    <Link to="/meet-the-team">
                                         <button
-                                            className="about-button font-oswald px-12 py-3 text-base sm:text-lg font-medium w-48 transition-all duration-300 ease-in-out"
+                                            className="about-button font-oswald px-12 py-3 text-base sm:text-lg font-medium w-670 transition-all duration-300 ease-in-out"
                                             style={{
                                                 backgroundColor: 'rgba(0, 61, 166, 255)',
                                                 color: 'white',
@@ -64,7 +64,7 @@ const ContactusSection = () => {
                                                 e.currentTarget.style.color = 'white';
                                             }}
                                         >
-                                            FAQs
+                                            Meet The Team
                                         </button>
                                     </Link>
                                 </div>
