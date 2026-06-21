@@ -13,6 +13,6 @@ ENV FLASK_ENV=development
 
 EXPOSE 5000
 
-CMD ["sh", "-c", "flask db upgrade && flask run --host=0.0.0.0"]
+CMD ["sh", "-c", "flask db upgrade && flask run --host=0.0.0.0 --port=${PORT:-5000}"]
 
 
