@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "dev:client": "cd frontend && npm start",
+    "dev:server": "cd backend && nodemon run.py",
+    "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "nodemon": "^3.1.7"
+  },
+  "dependencies": {
+    "@fontsource/oswald": "^5.1.0",
+    "axios": "^1.7.7",
+    "jsonwebtoken": "^9.0.2",
+    "jwt-decode": "^4.0.0",
+    "react-modal": "^3.16.1",
+    "react-toastify": "^10.0.6"
+  }
+}

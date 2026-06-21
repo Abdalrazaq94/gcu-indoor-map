@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+
+# Flask related
+instance/
+.venv/
+venv/
+env/
+env.bak/
+*.egg-info/
+*.egg
+
+# React
+node_modules/
+build/
+*.log
+
+# React environment variables
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Icon?

@@ -1,0 +1,140 @@
+/* Base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.welcome-page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.parent {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+}
+
+/* Header Section */
+.header-section {
+    width: 100%;
+    padding: 8rem 5vw;
+    text-align: center;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+/* Info section */
+.info-section {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,61,166,255);
+    color: white;
+    padding: 2rem 5vw;
+    text-align: center;
+    z-index: 1;
+}
+
+.desc-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.description {
+    font-size: clamp(1.5rem, 4vw, 2.25rem);
+    margin: 1rem 0;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.login-button, .register-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.login-button:hover, .register-button:hover{
+    background-color: #fff;
+    color: rgba(0,61,166,255);
+}
+
+.footer-text {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    margin-top: 2rem;
+    color: #d1d1d1;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.header-section .oval {
+    position: absolute;
+    left: -54%;
+    color: #EFEFEF;
+    width: 100%;
+}
+
+.line {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 1px;
+    margin: 3rem auto 0.1rem;
+    background: url('../../../assets/Line\ 1.png') no-repeat center;
+    background-size: cover;
+    z-index: 21;
+}
+
+@media (min-width: 768px) {
+    .desc-container {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .desc-container {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .logo-image {
+        max-width: 300px;
+    }
+}
