@@ -174,7 +174,7 @@ Your feature will be reviewed and, if everything looks okay, merged into the dev
 ## Team
 
 | Name | Role |
-|---|---|
+|---|---|--|
 | Abadi Altaih | Full-Stack Developer |(Frontend Lead) |
 | Joe Mcskimming |Full-Stack Developer | (Backend Lead) |
 | Zubeyr Osman | Frontend Developer |
