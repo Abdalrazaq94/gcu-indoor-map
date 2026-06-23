@@ -175,8 +175,8 @@ Your feature will be reviewed and, if everything looks okay, merged into the dev
 
 | Name | Role |
 |---|---|
-| Abadi Altaih Full-Stack Developer |(Frontend Lead) |
-| Joe McskimmingFull-Stack Developer | (Backend Lead) |
+| Abadi Altaih | Full-Stack Developer |(Frontend Lead) |
+| Joe Mcskimming |Full-Stack Developer | (Backend Lead) |
 | Zubeyr Osman | Frontend Developer |
 | Liam Moore | Frontend Developer |
 | Bohdan Kostiv | UX/UI Designer |
