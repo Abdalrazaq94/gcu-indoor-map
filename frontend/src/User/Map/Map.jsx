@@ -19,26 +19,89 @@ const Map = () => {
             sandbox="allow-same-origin allow-scripts"
           ></iframe>
         ) : (
-          // If the user is not logged in, show a message
+          // If the user is NOT logged in, show a centered prompt to log in / register
           <div
             style={{
-              position: "absolute",
-              top: "0",
-              left: "0",
-              width: "100%",
-              height: "100%",
-              pointerEvents: "none", // Prevent overlay from blocking the entire iframe
+              minHeight: "80vh",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              padding: "1.5rem",
+              textAlign: "center",
             }}
           >
-            <div>
-              <h1 style={{ fontSize: "2rem", color: "#003da6" }}>
-                You must be logged in to access the map.
+            <div
+              style={{
+                maxWidth: "480px",
+                width: "100%",
+                padding: "2.5rem 2rem",
+                borderRadius: "16px",
+                backgroundColor: "#ffffff",
+                border: "1px solid #eee",
+                boxShadow: "0 10px 30px rgba(0, 0, 0, 0.08)",
+              }}
+            >
+              <h1
+                style={{
+                  fontSize: "2rem",
+                  color: "#003da6",
+                  marginBottom: "0.75rem",
+                }}
+              >
+                View the Campus Map
               </h1>
-              <p style={{ marginTop: "1rem", fontSize: "1.2rem" }}>
-                <a href="/login" style={{ color: "#003da6", textDecoration: "underline" }}>
-                  Click here to login
-                </a>
+
+              <p
+                style={{
+                  fontSize: "1.1rem",
+                  color: "#444",
+                  lineHeight: 1.5,
+                  marginBottom: "2rem",
+                }}
+              >
+                You need an account to access the interactive campus map.
+                Please log in, or create an account to get started.
               </p>
+
+              <div
+                style={{
+                  display: "flex",
+                  gap: "1rem",
+                  justifyContent: "center",
+                  flexWrap: "wrap",
+                }}
+              >
+                <a
+                  href="/login"
+                  style={{
+                    backgroundColor: "#003da6",
+                    color: "#ffffff",
+                    padding: "0.75rem 1.75rem",
+                    borderRadius: "8px",
+                    textDecoration: "none",
+                    fontSize: "1.05rem",
+                    fontWeight: 500,
+                  }}
+                >
+                  Log In
+                </a>
+
+                <a
+                  href="/register"
+                  style={{
+                    backgroundColor: "#ffffff",
+                    color: "#003da6",
+                    padding: "0.75rem 1.75rem",
+                    borderRadius: "8px",
+                    textDecoration: "none",
+                    fontSize: "1.05rem",
+                    fontWeight: 500,
+                    border: "2px solid #003da6",
+                  }}
+                >
+                  Create an Account
+                </a>
+              </div>
             </div>
           </div>
         )}
